@@ -1,0 +1,120 @@
+#main{
+    display: flex;
+    position: relative;
+    min-height: 600px;
+    background-image: url('../chaus.png');
+    justify-content: center;
+    align-items: center;
+}
+
+#main .overlay-gif{
+    width: min(90vw, 1000px);
+}
+
+#events{
+    background-color: #0000ff;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+.event {
+    margin: 0px 150px 50px 150px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid white;
+    display: grid;
+    grid-template-columns: auto auto 1fr; 
+    align-items: center;
+    justify-content: center;
+}
+
+.event img {
+    width: 300px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.event .date{
+    margin: 30px;
+    display: flex;
+    flex-direction: column
+}
+
+.event .inf {
+    margin-left: 30px;
+}
+
+.date{
+    line-height: 35px;
+}
+
+.date .day{
+    font-family: "Escargoth";
+    font-size: 40px;
+} 
+
+.event .weekday, .event .time{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.event .desc{
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+
+}
+
+.event .inf{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.event .title{
+    font-family: "Escargoth";
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.custom-shape-divider-bottom-1765512771 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1765512771 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1765512771 .shape-fill {
+    fill: white;
+}
+
+.custom-shape-divider-bottom-1765513908 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1765513908 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1765513908 .shape-fill {
+    fill: #0000FF;
+}

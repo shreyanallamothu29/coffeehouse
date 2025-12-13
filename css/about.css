@@ -1,0 +1,124 @@
+main {
+    padding: 10vh 10vh 10vh 10vh;
+    background-color: blue;
+}
+
+main .sentence{
+    font-family: "Escargoth";
+    font-size: 13vh;
+    color: white;
+}
+
+main .about{
+    font-family: "Jost";
+    color: white;
+    font-size: 3vh;
+}
+
+.history h2{
+    font-family: "Jost";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    color: blue;
+}
+
+.history{
+    padding: 0px;
+    margin: 5vh 10vh 10vh 10vh;
+    background-color: white;
+}
+
+.history h1{
+    font-family: "Escargoth";
+    color: blue;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.year1967{
+    display: flex;
+    align-items: center;
+    margin: 5vh 10vh 10vh 10vh;
+    gap: 10vh;
+}
+
+.year1967 .desc{
+    font-family: "Jost";
+    color: blue;
+    font-size: 3vh;
+}
+
+.year1967 h2{
+    font-family: "Jost";
+    color: blue;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+.year1967 img {
+  display: block;
+  height: 25rem;
+  width: 25rem;
+}
+
+.year1981{
+    display: flex;
+    align-items: center;
+    margin: 10vh;
+    gap: 10vh;
+}
+
+.year1981 .desc{
+    font-family: "Jost";
+    color: blue;
+    font-size: 3vh;
+}
+
+.year1981 img {
+  display: block;
+  height: 25rem;
+  width: 25rem;
+}
+
+.year1981 h2{
+    font-family: "Jost";
+    color: blue;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.today{
+    display: flex;
+    align-items: center;
+    margin: 10vh;
+    gap: 10vh;
+}
+
+.today .desc{
+    font-family: "Jost";
+    color: blue;
+    font-size: 3vh;
+}
+
+.today img {
+  display: block;
+  height: 25rem;
+  width: 25rem;
+}
+
+
+.today h2{
+    font-family: "Jost";
+    color: blue;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+}

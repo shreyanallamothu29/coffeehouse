@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Escargoth";
+    src: url("../fonts/Escargoth Demo.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#logo{
+    margin: 0px;
+    padding: 0px;
+}
+
+header { display: flex; justify-content: space-between; padding: 20px; background-color: transparent; }
+
+#about-header{ align-items: center; display: flex; justify-content: space-between; padding: 10px; background-color: blue; }
+
+
+#home-links a {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: "Jost";
+    margin: 0px 10px 0px 10px;
+}
+
+
+#about-links a{
+    background-color: white;
+    color: blue;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: "Jost";
+    margin: 0px 10px 0px 10px;
+}
+
+footer h2,
+footer p {
+    font-family: "Jost";
+}
+
+footer h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+#info{
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: blue
+}
+
+.info-block h2 {
+    margin-bottom: 20px;
+}
+
