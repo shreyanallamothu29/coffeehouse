@@ -5,10 +5,18 @@ main {
 
 main .sentence{
     font-family: "Escargoth";
-    font-size: 13vh;
+    font-size: clamp(1rem, 6vw, 10rem);
     color: white;
 }
 
+
+@media (max-width: 900px) {
+    .year {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
 main .about{
     font-family: "Jost";
     color: white;
@@ -19,7 +27,7 @@ main .about{
     font-family: "Jost";
     font-weight: 400;
     font-style: italic;
-    font-size: 1rem;
+    font-size: clamp(.5rem, 1rem, 2rem);
     text-align: center;
     color: blue;
 }
@@ -37,54 +45,20 @@ main .about{
     font-size: 7vh;
 }
 
-.year1967{
+.year{
     display: flex;
     align-items: center;
     margin: 5vh 10vh 10vh 10vh;
     gap: 10vh;
 }
 
-.year1967 .desc{
+.year .desc{
     font-family: "Jost";
     color: blue;
     font-size: 3vh;
 }
 
-.year1967 h2{
-    font-family: "Jost";
-    color: blue;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-style: normal;
-}
- 
-.year1967 img {
-  display: block;
-  height: 25rem;
-  width: 25rem;
-}
-
-.year1981{
-    display: flex;
-    align-items: center;
-    margin: 10vh;
-    gap: 10vh;
-}
-
-.year1981 .desc{
-    font-family: "Jost";
-    color: blue;
-    font-size: 3vh;
-}
-
-.year1981 img {
-  display: block;
-  height: 25rem;
-  width: 25rem;
-}
-
-.year1981 h2{
+.year h2{
     font-family: "Jost";
     color: blue;
     text-align: left;
@@ -93,32 +67,24 @@ main .about{
     font-style: normal;
 }
 
-
-.today{
-    display: flex;
-    align-items: center;
-    margin: 10vh;
-    gap: 10vh;
+ .year img {
+  max-width: 25rem;
+  height: auto;
 }
 
-.today .desc{
-    font-family: "Jost";
-    color: blue;
-    font-size: 3vh;
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
 }
 
-.today img {
-  display: block;
-  height: 25rem;
-  width: 25rem;
-}
-
-
-.today h2{
-    font-family: "Jost";
-    color: blue;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-style: normal;
+.year{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }

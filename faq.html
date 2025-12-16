@@ -14,7 +14,6 @@
             <a href="about.html">about</a>
             <a href="menu.html">menu</a>
             <a href="faq.html">faq</a>
-            <a>support us</a>
             <a>work with us</a>
         </div>
     </header>
@@ -28,7 +27,7 @@
         <div id="info">
             <div class="info-block">
                 <h2>hours</h2>
-                <p>every day<br> 6PM - 1AM</p>
+                <p>every night<br> 6PM - 1AM</p>
             </div>
             <div class="info-block">
                 <h2>location</h2>
@@ -46,10 +45,10 @@
         const faqData = [
             {
                 question: "Q: what are your hours?",
-                answer: "6 PM - 1 AM every night"
+                answer: "6 PM - 1 AM, every night"
             },
             {
-                question: "Q: tried to find you, but i couldn’t. help?",
+                question: "Q: i can't find you guys! help?",
                 answer: "Go behind Wilson dorm and look for a brick building called Crowell. Go to the back of Crowell (the side facing Buchanan Blvd). Our building is between Epworth Dorm and the ARK Dance Studio. The coffeehouse is up the metal stairs and above the Women’s Center. "
             },
             {
@@ -62,7 +61,7 @@
             },
             {
                 question: "Q: who do i contact for bookings?",
-                answer: "duucoffeehouse@duke.edu"
+                answer: '<a href="mailto:duucoffeehouse@duke.edu">duucoffeehouse@duke.edu</a>'
             }
         ]
 
@@ -95,7 +94,11 @@
                 parent.classList.toggle("show-answer");
             })
         })
-
+        document.querySelectorAll(".item-answer a").forEach(link => {
+            link.addEventListener("click", e => {
+                e.stopPropagation();
+            });
+        });
     </script>
 </body>
 </html>
