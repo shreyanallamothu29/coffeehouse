@@ -32,7 +32,6 @@ header { display: flex; justify-content: space-between; padding: 20px; backgroun
 
 #about-header{ align-items: center; display: flex; justify-content: space-between; padding: 10px; background-color: blue; }
 
-
 #home-links a {
     background-color: blue;
     color: white;
@@ -42,7 +41,6 @@ header { display: flex; justify-content: space-between; padding: 20px; backgroun
     font-family: "Jost";
     margin: 0px 10px 0px 10px;
 }
-
 
 #about-links a{
     background-color: white;

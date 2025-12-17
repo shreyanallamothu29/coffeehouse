@@ -43,6 +43,7 @@ main .about{
     color: blue;
     text-align: center;
     font-size: 7vh;
+    font-weight: 100;
 }
 
 .year{
