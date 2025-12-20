@@ -87,3 +87,11 @@ h2{
 .contact-right{
     display: none;
 }
+
+footer {
+    background-color: white;
+}
+
+footer h2{
+    color: blue;
+}
